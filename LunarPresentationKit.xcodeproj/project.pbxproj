@@ -15,7 +15,19 @@
 		4A4765B82323892500181E51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4765B62323892500181E51 /* Main.storyboard */; };
 		4A4765BA2323892500181E51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A4765B92323892500181E51 /* Assets.xcassets */; };
 		4A4765BD2323892500181E51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4765BB2323892500181E51 /* LaunchScreen.storyboard */; };
+		4A4765C323238C6C00181E51 /* LNRightPresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4765C223238C6C00181E51 /* LNRightPresentedViewController.swift */; };
+		4A4765C723239CCE00181E51 /* LNPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4765C623239CCE00181E51 /* LNPresentationAnimator.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A4765C42323998800181E51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A4765522323873A00181E51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A47655A2323873A00181E51;
+			remoteInfo = LunarPresentationKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4A47655B2323873A00181E51 /* LunarPresentationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LunarPresentationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +42,8 @@
 		4A4765B92323892500181E51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A4765BC2323892500181E51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A4765BE2323892500181E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A4765C223238C6C00181E51 /* LNRightPresentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNRightPresentedViewController.swift; sourceTree = "<group>"; };
+		4A4765C623239CCE00181E51 /* LNPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNPresentationAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				4A47655E2323873A00181E51 /* LunarPresentationKit.h */,
+				4A4765C623239CCE00181E51 /* LNPresentationAnimator.swift */,
 				4A4765662323879200181E51 /* LNTransitioningDelegate.swift */,
 				4A476568232387D900181E51 /* LNPresentationController.swift */,
 				4A47655F2323873A00181E51 /* Info.plist */,
@@ -84,6 +99,7 @@
 			children = (
 				4A4765B22323892500181E51 /* AppDelegate.swift */,
 				4A4765B42323892500181E51 /* ViewController.swift */,
+				4A4765C223238C6C00181E51 /* LNRightPresentedViewController.swift */,
 				4A4765B62323892500181E51 /* Main.storyboard */,
 				4A4765B92323892500181E51 /* Assets.xcassets */,
 				4A4765BB2323892500181E51 /* LaunchScreen.storyboard */,
@@ -135,6 +151,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4A4765C52323998800181E51 /* PBXTargetDependency */,
 			);
 			name = LNPresentationKitTestApp;
 			productName = LNPresentationKitTestApp;
@@ -207,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A4765672323879200181E51 /* LNTransitioningDelegate.swift in Sources */,
+				4A4765C723239CCE00181E51 /* LNPresentationAnimator.swift in Sources */,
 				4A476569232387D900181E51 /* LNPresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,12 +233,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A4765C323238C6C00181E51 /* LNRightPresentedViewController.swift in Sources */,
 				4A4765B52323892500181E51 /* ViewController.swift in Sources */,
 				4A4765B32323892500181E51 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A4765C52323998800181E51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A47655A2323873A00181E51 /* LunarPresentationKit */;
+			targetProxy = 4A4765C42323998800181E51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4A4765B62323892500181E51 /* Main.storyboard */ = {
@@ -434,6 +461,7 @@
 				4A4765C02323892500181E51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
