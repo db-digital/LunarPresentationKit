@@ -10,6 +10,11 @@
 		4A4765602323873A00181E51 /* LunarPresentationKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A47655E2323873A00181E51 /* LunarPresentationKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4A4765672323879200181E51 /* LNTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4765662323879200181E51 /* LNTransitioningDelegate.swift */; };
 		4A476569232387D900181E51 /* LNPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A476568232387D900181E51 /* LNPresentationController.swift */; };
+		4A4765B32323892500181E51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4765B22323892500181E51 /* AppDelegate.swift */; };
+		4A4765B52323892500181E51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4765B42323892500181E51 /* ViewController.swift */; };
+		4A4765B82323892500181E51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4765B62323892500181E51 /* Main.storyboard */; };
+		4A4765BA2323892500181E51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A4765B92323892500181E51 /* Assets.xcassets */; };
+		4A4765BD2323892500181E51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4765BB2323892500181E51 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,10 +23,24 @@
 		4A47655F2323873A00181E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A4765662323879200181E51 /* LNTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNTransitioningDelegate.swift; sourceTree = "<group>"; };
 		4A476568232387D900181E51 /* LNPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNPresentationController.swift; sourceTree = "<group>"; };
+		4A4765B02323892500181E51 /* LNPresentationKitTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LNPresentationKitTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A4765B22323892500181E51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A4765B42323892500181E51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A4765B72323892500181E51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A4765B92323892500181E51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A4765BC2323892500181E51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4A4765BE2323892500181E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4A4765572323873A00181E51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A4765AD2323892500181E51 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				4A47655D2323873A00181E51 /* LunarPresentationKit */,
+				4A4765B12323892500181E51 /* LNPresentationKitTestApp */,
 				4A47655C2323873A00181E51 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				4A47655B2323873A00181E51 /* LunarPresentationKit.framework */,
+				4A4765B02323892500181E51 /* LNPresentationKitTestApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +77,19 @@
 				4A47655F2323873A00181E51 /* Info.plist */,
 			);
 			path = LunarPresentationKit;
+			sourceTree = "<group>";
+		};
+		4A4765B12323892500181E51 /* LNPresentationKitTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				4A4765B22323892500181E51 /* AppDelegate.swift */,
+				4A4765B42323892500181E51 /* ViewController.swift */,
+				4A4765B62323892500181E51 /* Main.storyboard */,
+				4A4765B92323892500181E51 /* Assets.xcassets */,
+				4A4765BB2323892500181E51 /* LaunchScreen.storyboard */,
+				4A4765BE2323892500181E51 /* Info.plist */,
+			);
+			path = LNPresentationKitTestApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,18 +124,40 @@
 			productReference = 4A47655B2323873A00181E51 /* LunarPresentationKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		4A4765AF2323892500181E51 /* LNPresentationKitTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A4765C12323892500181E51 /* Build configuration list for PBXNativeTarget "LNPresentationKitTestApp" */;
+			buildPhases = (
+				4A4765AC2323892500181E51 /* Sources */,
+				4A4765AD2323892500181E51 /* Frameworks */,
+				4A4765AE2323892500181E51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LNPresentationKitTestApp;
+			productName = LNPresentationKitTestApp;
+			productReference = 4A4765B02323892500181E51 /* LNPresentationKitTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		4A4765522323873A00181E51 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Rajat Agrawal";
 				TargetAttributes = {
 					4A47655A2323873A00181E51 = {
 						CreatedOnToolsVersion = 8.3.3;
 						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					4A4765AF2323892500181E51 = {
+						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -112,6 +168,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 4A4765512323873A00181E51;
 			productRefGroup = 4A47655C2323873A00181E51 /* Products */;
@@ -119,6 +176,7 @@
 			projectRoot = "";
 			targets = (
 				4A47655A2323873A00181E51 /* LunarPresentationKit */,
+				4A4765AF2323892500181E51 /* LNPresentationKitTestApp */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +186,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A4765AE2323892500181E51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A4765BD2323892500181E51 /* LaunchScreen.storyboard in Resources */,
+				4A4765BA2323892500181E51 /* Assets.xcassets in Resources */,
+				4A4765B82323892500181E51 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +211,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4A4765AC2323892500181E51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A4765B52323892500181E51 /* ViewController.swift in Sources */,
+				4A4765B32323892500181E51 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4A4765B62323892500181E51 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A4765B72323892500181E51 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4A4765BB2323892500181E51 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A4765BC2323892500181E51 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4A4765612323873A00181E51 /* Debug */ = {
@@ -286,6 +382,30 @@
 			};
 			name = Release;
 		};
+		4A4765BF2323892500181E51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LNPresentationKitTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.orange.systems.LNPresentationKitTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4A4765C02323892500181E51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LNPresentationKitTestApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.orange.systems.LNPresentationKitTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -303,6 +423,15 @@
 			buildConfigurations = (
 				4A4765642323873A00181E51 /* Debug */,
 				4A4765652323873A00181E51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A4765C12323892500181E51 /* Build configuration list for PBXNativeTarget "LNPresentationKitTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A4765BF2323892500181E51 /* Debug */,
+				4A4765C02323892500181E51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
