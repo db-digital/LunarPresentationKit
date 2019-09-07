@@ -27,13 +27,13 @@ public class LNPresentationController: UIPresentationController {
         }
     }
     
-    func handlePanGesture(panGesture : UIPanGestureRecognizer) {
+    @objc func handlePanGesture(panGesture : UIPanGestureRecognizer) {
         Swift.print("Presentation pan gesture handler called")
         if (panGesture.state == .changed) {
             guard let containerView = containerView else {
                 return
             }
-            let translation = fabs(panGesture.translation(in: containerView).x)
+            let translation = abs(panGesture.translation(in: containerView).x)
             let percentage = translation/containerView.bounds.size.width
             Swift.print("Percentage is \(percentage)")
             presentationInteractor?.update(percentage)
