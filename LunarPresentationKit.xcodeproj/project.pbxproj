@@ -17,6 +17,7 @@
 		4A4765BD2323892500181E51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4765BB2323892500181E51 /* LaunchScreen.storyboard */; };
 		4A4765C323238C6C00181E51 /* LNRightPresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4765C223238C6C00181E51 /* LNRightPresentedViewController.swift */; };
 		4A4765C723239CCE00181E51 /* LNPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4765C623239CCE00181E51 /* LNPresentationAnimator.swift */; };
+		9A351460B60E81342934809C /* Pods_LunarPresentationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708A1922CD6482BF451B2F46 /* Pods_LunarPresentationKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DBF34DEF07F93E1743BFF4E /* Pods-LunarPresentationKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunarPresentationKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-LunarPresentationKit/Pods-LunarPresentationKit.release.xcconfig"; sourceTree = "<group>"; };
 		4A47655B2323873A00181E51 /* LunarPresentationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LunarPresentationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A47655E2323873A00181E51 /* LunarPresentationKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LunarPresentationKit.h; sourceTree = "<group>"; };
 		4A47655F2323873A00181E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,6 +46,8 @@
 		4A4765BE2323892500181E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A4765C223238C6C00181E51 /* LNRightPresentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNRightPresentedViewController.swift; sourceTree = "<group>"; };
 		4A4765C623239CCE00181E51 /* LNPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNPresentationAnimator.swift; sourceTree = "<group>"; };
+		708A1922CD6482BF451B2F46 /* Pods_LunarPresentationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunarPresentationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7364BABD159C89925F878DE4 /* Pods-LunarPresentationKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunarPresentationKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LunarPresentationKit/Pods-LunarPresentationKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A351460B60E81342934809C /* Pods_LunarPresentationKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +75,8 @@
 				4A47655D2323873A00181E51 /* LunarPresentationKit */,
 				4A4765B12323892500181E51 /* LNPresentationKitTestApp */,
 				4A47655C2323873A00181E51 /* Products */,
+				BAD0B5EA2ED51B3CF81FA361 /* Pods */,
+				54E750E6D3F5EEB8B4960670 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +115,23 @@
 			path = LNPresentationKitTestApp;
 			sourceTree = "<group>";
 		};
+		54E750E6D3F5EEB8B4960670 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				708A1922CD6482BF451B2F46 /* Pods_LunarPresentationKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAD0B5EA2ED51B3CF81FA361 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7364BABD159C89925F878DE4 /* Pods-LunarPresentationKit.debug.xcconfig */,
+				1DBF34DEF07F93E1743BFF4E /* Pods-LunarPresentationKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -126,10 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A4765632323873A00181E51 /* Build configuration list for PBXNativeTarget "LunarPresentationKit" */;
 			buildPhases = (
+				B8A8E3F7EDFF31BE245CD773 /* [CP] Check Pods Manifest.lock */,
 				4A4765562323873A00181E51 /* Sources */,
 				4A4765572323873A00181E51 /* Frameworks */,
 				4A4765582323873A00181E51 /* Headers */,
 				4A4765592323873A00181E51 /* Resources */,
+				8DA9DC281852393887A235B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,6 +243,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8DA9DC281852393887A235B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LunarPresentationKit/Pods-LunarPresentationKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8A8E3F7EDFF31BE245CD773 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4A4765562323873A00181E51 /* Sources */ = {
@@ -372,6 +431,7 @@
 		};
 		4A4765642323873A00181E51 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7364BABD159C89925F878DE4 /* Pods-LunarPresentationKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -392,6 +452,7 @@
 		};
 		4A4765652323873A00181E51 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DBF34DEF07F93E1743BFF4E /* Pods-LunarPresentationKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
