@@ -92,10 +92,8 @@
 		4A47655D2323873A00181E51 /* LunarPresentationKit */ = {
 			isa = PBXGroup;
 			children = (
+				4A49F1652324B14300BE9E58 /* Classes */,
 				4A47655E2323873A00181E51 /* LunarPresentationKit.h */,
-				4A4765C623239CCE00181E51 /* LNPresentationAnimator.swift */,
-				4A4765662323879200181E51 /* LNTransitioningDelegate.swift */,
-				4A476568232387D900181E51 /* LNPresentationController.swift */,
 				4A47655F2323873A00181E51 /* Info.plist */,
 			);
 			path = LunarPresentationKit;
@@ -113,6 +111,16 @@
 				4A4765BE2323892500181E51 /* Info.plist */,
 			);
 			path = LNPresentationKitTestApp;
+			sourceTree = "<group>";
+		};
+		4A49F1652324B14300BE9E58 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4A4765C623239CCE00181E51 /* LNPresentationAnimator.swift */,
+				4A4765662323879200181E51 /* LNTransitioningDelegate.swift */,
+				4A476568232387D900181E51 /* LNPresentationController.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		54E750E6D3F5EEB8B4960670 /* Frameworks */ = {
@@ -200,6 +208,7 @@
 					};
 					4A4765AF2323892500181E51 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3AXLSLW23U;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -482,6 +491,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3AXLSLW23U;
 				INFOPLIST_FILE = LNPresentationKitTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.orange.systems.LNPresentationKitTestApp;
@@ -494,6 +504,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3AXLSLW23U;
 				INFOPLIST_FILE = LNPresentationKitTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.orange.systems.LNPresentationKitTestApp;
