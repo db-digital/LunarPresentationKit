@@ -1,0 +1,24 @@
+{
+  "name": "LunarPresentationKit",
+  "version": "0.0.1",
+  "summary": "A swift library for most used presentation styles in iOS",
+  "description": "A swift library for most used presentation styles in iOS",
+  "homepage": "https://github.com/rajatagrawal/LunarPresentationKit",
+  "license": "MIT",
+  "authors": {
+    "Rajat Agrawal": "agrawal.rajat.89@gmail.com"
+  },
+  "platforms": {
+    "ios": "10.3"
+  },
+  "source": {
+    "path": "./"
+  },
+  "source_files": "Classes",
+  "requires_arc": true,
+  "dependencies": {
+    "CocoaLumberjack/Swift": [
+
+    ]
+  }
+}

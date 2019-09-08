@@ -1,0 +1,6 @@
+framework module LunarPresentationKit {
+  umbrella header "LunarPresentationKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
