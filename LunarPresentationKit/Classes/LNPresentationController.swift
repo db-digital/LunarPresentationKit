@@ -7,14 +7,14 @@
 //
 
 import UIKit
+import CocoaLumberjack
 
 public class LNPresentationController: UIPresentationController {
-    weak public var presentationViewPanGesture : UIPanGestureRecognizer?
+    weak public var presentationViewPanGesture : UIScreenEdgePanGestureRecognizer?
     weak public var presentationInteractor : UIPercentDrivenInteractiveTransition?
     
     override init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?) {
         super.init(presentedViewController: presentedViewController, presenting: presentingViewController)
-        
     }
     
     public override func presentationTransitionWillBegin() {
@@ -27,23 +27,28 @@ public class LNPresentationController: UIPresentationController {
         }
     }
     
-    @objc func handlePanGesture(panGesture : UIPanGestureRecognizer) {
-        Swift.print("Presentation pan gesture handler called")
+    @objc func handlePanGesture(panGesture : UIScreenEdgePanGestureRecognizer) {
+        guard let containerView = containerView, let window = containerView.window else {
+            return
+        }
+        let location = panGesture.location(in: nil).x
+        var percentage = location/window.bounds.size.width
+        if (panGesture.edges == .right) {
+            percentage = 1.0 - percentage
+        }
+        DDLogDebug("percentage is \(percentage)")
         if (panGesture.state == .changed) {
-            guard let containerView = containerView else {
-                return
-            }
-            let translation = abs(panGesture.translation(in: containerView).x)
-            let percentage = translation/containerView.bounds.size.width
-            Swift.print("Percentage is \(percentage)")
             presentationInteractor?.update(percentage)
         } else if (panGesture.state == .ended) {
-            presentationInteractor?.finish()
+            if (percentage >= 0.3) {
+                presentationInteractor?.finish()
+            } else {
+                presentationInteractor?.cancel()
+            }
         }
     }
     
     public override var frameOfPresentedViewInContainerView: CGRect {
         return containerView?.frame ?? .zero
     }
-
 }
