@@ -9,7 +9,7 @@
 import UIKit
 
 public class LNTransitioningDelegate: NSObject, UIViewControllerTransitioningDelegate {
-    weak public var myPresentationController : LNPresentationController?
+    weak public var presentationController : LNPresentationController?
     public var presentationVCConfigBlock: ((LNPresentationController) -> Void)?
     
     public func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
@@ -17,12 +17,14 @@ public class LNTransitioningDelegate: NSObject, UIViewControllerTransitioningDel
     }
     
     public func interactionControllerForPresentation(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
-        return UIPercentDrivenInteractiveTransition()
+        let interactor = UIPercentDrivenInteractiveTransition()
+        presentationController?.presentationInteractor = interactor
+        return interactor
     }
     
     public func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
         let presentationController = LNPresentationController(presentedViewController: presented, presenting: presenting)
-        self.myPresentationController = presentationController
+        self.presentationController = presentationController
         presentationVCConfigBlock?(presentationController)
         return presentationController
     }
