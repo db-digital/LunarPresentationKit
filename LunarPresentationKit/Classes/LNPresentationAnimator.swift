@@ -12,30 +12,43 @@ import CocoaLumberjack
 class LNPresentationAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     
     var propertyAnimator : UIViewPropertyAnimator?
+    var isBeingPresented = true
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
-        DDLogDebug("animated transitioning function called")
-        guard let toVC = transitionContext.viewController(forKey: .to), let toView = transitionContext.view(forKey: .to) else {
-            return
+        if (self.isBeingPresented) {
+            DDLogDebug("animated transitioning function called for presentation")
+            presentationSetup(using: transitionContext)
+            UIView.animate(withDuration: self.transitionDuration(using: transitionContext),
+                           delay: 0,
+                           usingSpringWithDamping: 1.0,
+                           initialSpringVelocity: 0,
+                           options: .beginFromCurrentState,
+                           animations: {
+                            self.presentationAnimation(using: transitionContext)
+            }) { (success) in
+                DDLogDebug("success during animation is \(success)")
+                DDLogDebug("transition cancelled is \(transitionContext.transitionWasCancelled)")
+                transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
+            };
+        } else {
+            DDLogDebug("animated transitioning function called for dismissal")
+            guard let fromVC = transitionContext.viewController(forKey: .from), let fromView = transitionContext.view(forKey: .from) else {
+                return
+            }
+            let finalFrame = transitionContext.finalFrame(for: fromVC).offsetBy(dx: transitionContext.containerView.frame.size.width, dy: 0)
+            UIView.animate(withDuration: self.transitionDuration(using: transitionContext),
+                           delay: 0,
+                           usingSpringWithDamping: 1.0,
+                           initialSpringVelocity: 0,
+                           options: .beginFromCurrentState,
+                           animations: {
+                            fromView.frame = finalFrame
+            }) { (success) in
+                DDLogDebug("success during animation is \(success)")
+                DDLogDebug("transition cancelled is \(transitionContext.transitionWasCancelled)")
+                transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
+            };
         }
-        transitionContext.containerView.addSubview(toView)
-        let finalFrame = transitionContext.finalFrame(for: toVC)
-        DDLogDebug("final frame for to vc is \(finalFrame)")
-        toView.frame = finalFrame.offsetBy(dx: transitionContext.containerView.frame.size.width, dy: 0)
-        DDLogDebug("initial frame for to vc is \(toView.frame)")
-        UIView.animate(withDuration: self.transitionDuration(using: transitionContext),
-                       delay: 0,
-                       usingSpringWithDamping: 1.0,
-                       initialSpringVelocity: 0,
-                       options: .beginFromCurrentState,
-                       animations: {
-            toView.frame = finalFrame
-        }) { (success) in
-            DDLogDebug("success during animation is \(success)")
-            DDLogDebug("transition cancelled is \(transitionContext.transitionWasCancelled)")
-            transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
-        };
-        
     }
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
@@ -43,28 +56,41 @@ class LNPresentationAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     }
     
     func interruptibleAnimator(using transitionContext: UIViewControllerContextTransitioning) -> UIViewImplicitlyAnimating {
-        DDLogDebug("interruptible animator method called")
-        if let propertyAnimator = propertyAnimator {
-            return propertyAnimator
+        if (isBeingPresented) {
+            DDLogDebug("interruptible animator method called for presentation")
+            presentationSetup(using: transitionContext)
+            let animator = UIViewPropertyAnimator(duration: transitionDuration(using: transitionContext), dampingRatio: 1.0, animations: {
+                let toView = transitionContext.view(forKey: .to)
+                toView?.backgroundColor = .cyan
+                self.presentationAnimation(using: transitionContext)
+            })
+            animator.addCompletion { (position) in
+                transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
+            }
+            return animator
+        } else {
+            DDLogDebug("interruptible animator method called for dismissal")
+            return UIViewPropertyAnimator(duration: transitionDuration(using: transitionContext), dampingRatio: 1.0, animations: {
+                self.animateTransition(using: transitionContext)
+            })
         }
-        guard let toVC = transitionContext.viewController(forKey: .to), let toView = transitionContext.view(forKey: .to) else {
-            return UIViewPropertyAnimator(duration: 0, dampingRatio: 0, animations: nil)
+    }
+    
+    func presentationSetup(using transitionContext: UIViewControllerContextTransitioning) {
+        guard let toVC = transitionContext.viewController(forKey: .to) , let toView = transitionContext.view(forKey: .to) else {
+            return
         }
         transitionContext.containerView.addSubview(toView)
         let finalFrame = transitionContext.finalFrame(for: toVC)
         DDLogDebug("final frame for to vc is \(finalFrame)")
         toView.frame = finalFrame.offsetBy(dx: transitionContext.containerView.frame.size.width, dy: 0)
-        DDLogDebug("initial frame for to vc is \(toView.frame)")
-
-        let animator = UIViewPropertyAnimator(duration: transitionDuration(using: transitionContext),
-                                              dampingRatio: 1.0,
-                                              animations: {
-            toView.frame = finalFrame
-        })
-        animator.addCompletion { (position) in
-            transitionContext.completeTransition(!(transitionContext.transitionWasCancelled))
+    }
+    
+    func presentationAnimation(using transitionContext: UIViewControllerContextTransitioning) {
+        guard let toVC = transitionContext.viewController(forKey: .to), let toView = transitionContext.view(forKey: .to) else {
+            return
         }
-        propertyAnimator = animator
-        return animator
+        let finalFrame = transitionContext.finalFrame(for: toVC)
+        toView.frame = finalFrame
     }
 }

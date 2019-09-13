@@ -7,19 +7,37 @@
 //
 
 import UIKit
+import LunarPresentationKit
+import CocoaLumberjack
+
 
 class LNRightPresentedViewController: UIViewController {
-
+    let panGesture = UIScreenEdgePanGestureRecognizer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        addPanGesture()
         view.backgroundColor = .orange
+        if let lnPresentationController = presentationController as? LNPresentationController {
+            lnPresentationController.dismissalViewPanGesture = panGesture
+        }
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func addPanGesture() {
+        panGesture.edges = .left
+        panGesture.addTarget(self, action:#selector(self.handlePan(gesture:)))
+        view.addGestureRecognizer(panGesture)
+    }
+    
+    @objc func handlePan(gesture : UIScreenEdgePanGestureRecognizer) {
+        if (gesture.state == .began && (!isBeingDismissed) && !isBeingPresented) {
+            DDLogDebug("dismissal pan gesture : Dismissing presented view controller")
+            dismiss(animated: true, completion: nil)
+        } else {
+            DDLogDebug("dismissal pan gesture : Falling through")
+        }
     }
     
 
