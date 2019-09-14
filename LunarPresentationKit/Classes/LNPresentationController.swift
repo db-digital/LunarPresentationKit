@@ -15,10 +15,6 @@ public class LNPresentationController: UIPresentationController {
     weak public var presentationInteractor : UIPercentDrivenInteractiveTransition?
     weak public var dismissalInteractor : UIPercentDrivenInteractiveTransition?
     
-    override init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?) {
-        super.init(presentedViewController: presentedViewController, presenting: presentingViewController)
-    }
-    
     public override func presentationTransitionWillBegin() {
         initializePresentationPanGesture()
     }
@@ -36,7 +32,7 @@ public class LNPresentationController: UIPresentationController {
         dismissalViewPanGesture?.addTarget(self, action: #selector(self.handleDismissalPanGesture(panGesture:)))
     }
     
-    @objc func handleDismissalPanGesture(panGesture : UIScreenEdgePanGestureRecognizer) {
+    @objc public func handleDismissalPanGesture(panGesture : UIScreenEdgePanGestureRecognizer) {
         DDLogVerbose("presentation controller : dismissal pan gesture listener")
         guard let containerView = containerView, let window = containerView.window else {
             DDLogWarn("dismissal container view or window not present")
@@ -62,7 +58,7 @@ public class LNPresentationController: UIPresentationController {
             DDLogDebug("dismissal pan gesture came in the else with state \(panGesture.state.rawValue)")
         }
     }
-    @objc func handlePanGesture(panGesture : UIScreenEdgePanGestureRecognizer) {
+    @objc public func handlePanGesture(panGesture : UIScreenEdgePanGestureRecognizer) {
         guard let containerView = containerView, let window = containerView.window else {
             return
         }

@@ -1,5 +1,5 @@
 //
-//  LNPresentationAnimator.swift
+//  LNSideSheetAnimator.swift
 //  LunarPresentationKit
 //
 //  Created by Rajat Agrawal on 9/7/19.
@@ -9,12 +9,10 @@
 import UIKit
 import CocoaLumberjack
 
-class LNPresentationAnimator: NSObject, UIViewControllerAnimatedTransitioning {
-    
+public class LNSideSheetAnimator: LNAnimator {
     var propertyAnimator : UIViewPropertyAnimator?
-    var isBeingPresented = true
     
-    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+    public override func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         if (self.isBeingPresented) {
             DDLogDebug("animated transitioning function called for presentation")
             presentationSetup(using: transitionContext)
@@ -51,11 +49,7 @@ class LNPresentationAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         }
     }
     
-    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 1.5
-    }
-    
-    func interruptibleAnimator(using transitionContext: UIViewControllerContextTransitioning) -> UIViewImplicitlyAnimating {
+    public func interruptibleAnimator(using transitionContext: UIViewControllerContextTransitioning) -> UIViewImplicitlyAnimating {
         if (isBeingPresented) {
             DDLogDebug("interruptible animator method called for presentation")
             presentationSetup(using: transitionContext)
