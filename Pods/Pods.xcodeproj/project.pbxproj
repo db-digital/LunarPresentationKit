@@ -12,54 +12,55 @@
 		096CB0404EF464DC1E8D5F5F5B0A210E /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 92506D3F35BD417A147935DCB0BF13E7 /* DDFileLogger.m */; };
 		104F93F51E9874729C21655508F6D9D9 /* DDASLLogCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 06478169F2DEED57748DE0D6C6ABD54A /* DDASLLogCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		158337C39C663083CC1858B14F443D05 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = ACBF0AE6649103C17CBB1EFCDDE8923D /* DDAbstractDatabaseLogger.m */; };
+		222AEA79C71E2EEBE40B0F07685287F4 /* LNPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783A30951CABA61EAF62D8FBDF2897BD /* LNPresentationController.swift */; };
 		23F8AF0CCD6932BD129CCB61619ADB3D /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A49E964CECADB674B864AD4034D95B2 /* DDASLLogCapture.m */; };
 		25951A525FDB265713DACAF9184F4292 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DE7522FB41BE95EA42096E16EC4E5F /* DDTTYLogger.m */; };
-		2BEA0608FFA035FB8DD9D374AD08CD0E /* LNTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2280AD7AC42FC6DA158401BB9A2FE7 /* LNTransitioningDelegate.swift */; };
 		3F8D6E16E7F40A3AD3B208ED3BCD6F97 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A55E84D5EB3A9608379E4F00F98761F9 /* DDMultiFormatter.m */; };
-		46C8327521AC30B201CEF04878AB4460 /* LNPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5918829709695258AF27176D24141 /* LNPresentationController.swift */; };
+		467E88C030C0DF96CEE1B52160480823 /* LNSideSheetPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FA144C75F005FA805D7FF60048626A /* LNSideSheetPresentationController.swift */; };
 		47771D4F38962FF6D770D8D36E43D021 /* CocoaLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = A4CA60634BACC7330F3CCB3A5D05259E /* CocoaLumberjack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		477BC15A8DB4AB6D9FFC88DE5B2D0FD5 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54B5F8C28372E0E9A45ADC1B62AA9E2 /* CocoaLumberjack.framework */; };
 		4CAD49704680286622E12C021FB60917 /* CocoaLumberjack-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D67D96B1560A6D0A230A1C7098EC86F /* CocoaLumberjack-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4EAC3D69F4903411B1C8A52E8AFE90DD /* DDLegacyMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E0A758FBE1B8BC5BAEE3071F57B3F415 /* DDLegacyMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52657CFAD0C87B36950C42DB2357ADE4 /* LunarPresentationKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E51D1B9EE7FC83C4D8759D5D5BDBF988 /* LunarPresentationKit-dummy.m */; };
 		571D67412D63E7B133DC365423BFC3F3 /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 79BB4D8EEEDE8EED30406C0370230E25 /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A176CDB39E2631FAEE15AA7C55F4B17 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD1EB4171A798C5AF338480472A7F25 /* DDLog.m */; };
+		5ED6788B2C9500F5E100613BB65075EA /* LunarPresentationKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5416671DB6BC0CB03902AA4C947220D /* LunarPresentationKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		624EB5C2E3BAE9752E44A6D6ED63C61D /* DDContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 58E05B17746765B51207606A27953E54 /* DDContextFilterLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67A4C4A5764636432DC4E24C259A0F7F /* CLIColor.h in Headers */ = {isa = PBXBuildFile; fileRef = B1065B23B2143D5F7EF0C5B85970F964 /* CLIColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A705DACC676BCB94BAFB2979394CEA6 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B2E9837A51E29FAAF2B56DA6BC8C5C /* DDDispatchQueueLogFormatter.m */; };
-		7A62797A4A1BE469B5498402A9B29FA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE895120379BE9D98EF5040839CE0FE7 /* Foundation.framework */; };
 		7BB947EA62030EB477712B705A7B446F /* SwiftLogLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = 92987B1D790731E9B57CB07AD7B80C3A /* SwiftLogLevel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7D9FD7963BD0891B07B86C1BA858930B /* DDFileLogger+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F3546253A52C6B80933C615B1FABB4F /* DDFileLogger+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		810E59751E7D0F24B9067E63D83ACE4A /* LNBottomSheetAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912A4ED542A0284E29B40228F50358CF /* LNBottomSheetAnimator.swift */; };
 		83CC221B10D47B704195093BDC414867 /* DDAssert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F22484AB4DF9567D7E708EE7ED63E4 /* DDAssert.swift */; };
 		89141F0C37E88953C21B8A3A974ECBC7 /* DDFileLogger+Buffering.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B60195910D7FB25DB947EBF88958BB6 /* DDFileLogger+Buffering.m */; };
 		8A06D2CF5742FD2D42787EF27D59C98A /* DDLoggerNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3AA13B764D2C313AFD21D76B65A5A7 /* DDLoggerNames.m */; };
 		8D70177C27C08A7C49FDE0D4187E98AC /* Pods-LNPresentationKitTestApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0341FB0873EA894C4A48E76558C8F90F /* Pods-LNPresentationKitTestApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		940C063BA63E04C26083CA576243D70E /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DE9386C9C67D456BBEFCDDAE54135F0 /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94771B3E57B92CAEB181B877CDBECF62 /* LNBottomSheetPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974883705102834A4AC4050726226E5D /* LNBottomSheetPresentationController.swift */; };
+		948F110DBCCE57BEB37BFDA0C6F69998 /* LNSideSheetAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3F305D7E7D4F985DC205AC3DF4A0B /* LNSideSheetAnimator.swift */; };
 		9D33AD7D7E7D09CD606AE804E5F3AD62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE895120379BE9D98EF5040839CE0FE7 /* Foundation.framework */; };
 		9FDDF41B904B9A83CE04B00E4280934B /* Pods-LunarPresentationKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B2D356647936D9D789A37E863D0FF6 /* Pods-LunarPresentationKit-dummy.m */; };
 		A086395C3C4300488EF23AF3D67A9B10 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 76E2BC84E1924E149A768CDC689D3B72 /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0A1DFAFEC54B26E6EE5DF9C2B891322 /* LNBottomSheetAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880C4476DEC1043BF0D1CCF748067F87 /* LNBottomSheetAnimator.swift */; };
+		A350DA7698EDFABC4A6B520921E97FE6 /* LunarPresentationKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 443569289BBE070BEB2401932E83E4D1 /* LunarPresentationKit-dummy.m */; };
 		A5E839070BC3DF5291BE4CC48FAB08E6 /* DDFileLogger+Buffering.h in Headers */ = {isa = PBXBuildFile; fileRef = 959FB691AA6628D0A79CA03CA27EC2E4 /* DDFileLogger+Buffering.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ABCD282CEDAE4B76EF5A617C69CD13BD /* LNAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AF4C8398FF91A26E413A2A81CDF3C8 /* LNAnimator.swift */; };
-		AD01580AC1A58942950F357E9D1ED245 /* LNSideSheetAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63CF85F4AA82BEF9D30E9C69C3473C9 /* LNSideSheetAnimator.swift */; };
+		AD65FDD8A428665A9FF25B9F2141D441 /* LNTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C769C7FD417E75548A606E8AFF90FE /* LNTransitioningDelegate.swift */; };
 		B225B056D0B239352BD29922355628B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE895120379BE9D98EF5040839CE0FE7 /* Foundation.framework */; };
 		B25AFA2775DFEC1085D803C9821205FA /* DDLog+LOGV.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B785AFB638C1D45E10088CC71AF7053 /* DDLog+LOGV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC9FB395F512F99B626FD39A7F617AD3 /* Pods-LNPresentationKitTestApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 395D0D6E4310F642A293D807B20BC16B /* Pods-LNPresentationKitTestApp-dummy.m */; };
 		BE6665786223B5428866C62CA97EA3AE /* CLIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7563B8E76EA6587E53274304A4BB11A8 /* CLIColor.m */; };
 		C4061CF4C1E403C0F6F3FC8A994A4C42 /* CocoaLumberjack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234F07DE7192F911ACED032822AEEECD /* CocoaLumberjack.swift */; };
+		C415603389C105405CB4E0AC61207EE4 /* LNAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF469D6BE05E3826FCCE9C2F886B2949 /* LNAnimator.swift */; };
 		CF1A7526B86DBAA3C9ADFCBAED01BB71 /* CocoaLumberjack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A19C3D216E5046829AC1B43028DE2D0 /* CocoaLumberjack-dummy.m */; };
 		D0BD1654DD7AEE81F5F1AD782E61ABD7 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDA7E13DB6DBBD176ECD1A33F669412 /* DDContextFilterLogFormatter.m */; };
-		D54564EA6F9CA98E5974837881E70273 /* LNBottomSheetPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C91F54E33F48FAF8EFF1AE9A02D1B6 /* LNBottomSheetPresentationController.swift */; };
-		D75654FC1704158B9E1591A694DE0AF7 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54B5F8C28372E0E9A45ADC1B62AA9E2 /* CocoaLumberjack.framework */; };
 		D865950786FDC596321E957342A44D5E /* DDOSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B94252C021B6A4923FC8C941A8A6151 /* DDOSLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA5628721FD25F42FD5BFB47B3950512 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F5EC82E240E7C4A5A6833B09061A4D4C /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBA1DFA48782099673B506B6E5AC4E74 /* DDAssertMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7188C780CBE037678683B9856995EA /* DDAssertMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E07DE92D78487DBEF91FE774B61A553C /* Pods-LunarPresentationKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 574B11A097411644C795AB6FFBDDAFD7 /* Pods-LunarPresentationKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E19203C917B4E14C0E5D1527689F9B60 /* DDDispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = B07452F765B6CD733FC56F21B49E03D5 /* DDDispatchQueueLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E4AA4FBEF45B1FE41987859370FA7E52 /* LunarPresentationKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95BF5C11F19E277EB7E31A0DB42ACE7E /* LunarPresentationKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE6A0367F4D6164F374FDDDB9F57EFFC /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ED23EC2E873D800C7FA716A010A831 /* DDASLLogger.m */; };
 		F337238E4310A50BDBF50005C88220C0 /* DDLoggerNames.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FE8D5A08219BA214A73B82024598B56 /* DDLoggerNames.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F51013C3D7AD87FBBBBA8AA9A4BE03EC /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = F405530B70D2B810D554D63CAEF4C417 /* DDMultiFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6949BF2A8CF492225A02F703377EA0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE895120379BE9D98EF5040839CE0FE7 /* Foundation.framework */; };
+		FE076872B25301C6996F788AAD862093 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE895120379BE9D98EF5040839CE0FE7 /* Foundation.framework */; };
 		FE744FCC324426ADC0BA21A902799C48 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 6509E56FCA6014158831B6C7BA318BC2 /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -78,7 +79,7 @@
 			remoteGlobalIDString = B9401E293770F4F229A93A896A7289A0;
 			remoteInfo = LunarPresentationKit;
 		};
-		4DB85AC2BEE367207BAF808E9FB23FAC /* PBXContainerItemProxy */ = {
+		49644B2EFAC763B90C99A96D0434B149 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -97,9 +98,10 @@
 /* Begin PBXFileReference section */
 		0341FB0873EA894C4A48E76558C8F90F /* Pods-LNPresentationKitTestApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LNPresentationKitTestApp-umbrella.h"; sourceTree = "<group>"; };
 		06478169F2DEED57748DE0D6C6ABD54A /* DDASLLogCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogCapture.h; path = Classes/DDASLLogCapture.h; sourceTree = "<group>"; };
+		094EEF6CCAF1C2785260F7CC89E42CF5 /* LunarPresentationKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LunarPresentationKit.xcconfig; sourceTree = "<group>"; };
 		0B3DC477A021634B0377182DD72987E2 /* Pods-LunarPresentationKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LunarPresentationKit-acknowledgements.plist"; sourceTree = "<group>"; };
+		0ED3F305D7E7D4F985DC205AC3DF4A0B /* LNSideSheetAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LNSideSheetAnimator.swift; path = Classes/LNSideSheetAnimator.swift; sourceTree = "<group>"; };
 		12DE7522FB41BE95EA42096E16EC4E5F /* DDTTYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = Classes/DDTTYLogger.m; sourceTree = "<group>"; };
-		12E5918829709695258AF27176D24141 /* LNPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LNPresentationController.swift; path = Classes/LNPresentationController.swift; sourceTree = "<group>"; };
 		1428F6B2CEC879E853EBF340C74FEC60 /* Pods-LNPresentationKitTestApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LNPresentationKitTestApp.modulemap"; sourceTree = "<group>"; };
 		18E0A68494012A8E737789F32E653166 /* Pods-LunarPresentationKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LunarPresentationKit.release.xcconfig"; sourceTree = "<group>"; };
 		1AD11C41F3B863246350D6FD9003735F /* Pods-LunarPresentationKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LunarPresentationKit-Info.plist"; sourceTree = "<group>"; };
@@ -107,16 +109,18 @@
 		1C101A7E7341DD2525712C67BAAF7AF9 /* Pods-LNPresentationKitTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LNPresentationKitTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		206858A7ECB92ECB8E975E454F390F44 /* Pods-LNPresentationKitTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LNPresentationKitTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		234F07DE7192F911ACED032822AEEECD /* CocoaLumberjack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaLumberjack.swift; path = Classes/CocoaLumberjack.swift; sourceTree = "<group>"; };
+		26A90227FE0FDB7A93B821E4983BB468 /* LunarPresentationKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LunarPresentationKit-prefix.pch"; sourceTree = "<group>"; };
 		3026CE7DE27DBB4AE8C4EB2FFBA29B33 /* Pods_LNPresentationKitTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LNPresentationKitTestApp.framework; path = "Pods-LNPresentationKitTestApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		32C91F54E33F48FAF8EFF1AE9A02D1B6 /* LNBottomSheetPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LNBottomSheetPresentationController.swift; path = Classes/LNBottomSheetPresentationController.swift; sourceTree = "<group>"; };
+		37406AB72EA2699567322EB805E28316 /* LunarPresentationKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LunarPresentationKit-Info.plist"; sourceTree = "<group>"; };
 		395D0D6E4310F642A293D807B20BC16B /* Pods-LNPresentationKitTestApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LNPresentationKitTestApp-dummy.m"; sourceTree = "<group>"; };
 		3975EFA86BE5BB64FDA2CE96EA008F26 /* Pods-LNPresentationKitTestApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LNPresentationKitTestApp-frameworks.sh"; sourceTree = "<group>"; };
-		3A2280AD7AC42FC6DA158401BB9A2FE7 /* LNTransitioningDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LNTransitioningDelegate.swift; path = Classes/LNTransitioningDelegate.swift; sourceTree = "<group>"; };
-		3AD455F0278265FDDDB5739EC457838A /* LunarPresentationKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LunarPresentationKit.xcconfig; sourceTree = "<group>"; };
 		3B60195910D7FB25DB947EBF88958BB6 /* DDFileLogger+Buffering.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "DDFileLogger+Buffering.m"; path = "Classes/Extensions/DDFileLogger+Buffering.m"; sourceTree = "<group>"; };
 		3CB69ED2455B83E9C4EFC4B1170991A5 /* Pods-LunarPresentationKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LunarPresentationKit.debug.xcconfig"; sourceTree = "<group>"; };
 		41A782B2BAA4ACCD5BA79C02E3EA4B09 /* Pods-LunarPresentationKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LunarPresentationKit.modulemap"; sourceTree = "<group>"; };
+		443569289BBE070BEB2401932E83E4D1 /* LunarPresentationKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LunarPresentationKit-dummy.m"; sourceTree = "<group>"; };
+		49C769C7FD417E75548A606E8AFF90FE /* LNTransitioningDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LNTransitioningDelegate.swift; path = Classes/LNTransitioningDelegate.swift; sourceTree = "<group>"; };
 		4A49E964CECADB674B864AD4034D95B2 /* DDASLLogCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogCapture.m; path = Classes/DDASLLogCapture.m; sourceTree = "<group>"; };
+		4C2635632AEAAB8DABE6B384BC83B115 /* LunarPresentationKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LunarPresentationKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		574B11A097411644C795AB6FFBDDAFD7 /* Pods-LunarPresentationKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LunarPresentationKit-umbrella.h"; sourceTree = "<group>"; };
 		5876258279CD4C014D376E220DA6A593 /* CocoaLumberjack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaLumberjack.modulemap; sourceTree = "<group>"; };
 		58E05B17746765B51207606A27953E54 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDContextFilterLogFormatter.h; path = Classes/Extensions/DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
@@ -128,63 +132,52 @@
 		743C565DFD86EB6F2DB48EFA95DD03BD /* DDOSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDOSLogger.m; path = Classes/DDOSLogger.m; sourceTree = "<group>"; };
 		7563B8E76EA6587E53274304A4BB11A8 /* CLIColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CLIColor.m; path = Classes/CLI/CLIColor.m; sourceTree = "<group>"; };
 		76E2BC84E1924E149A768CDC689D3B72 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = Classes/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		783A30951CABA61EAF62D8FBDF2897BD /* LNPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LNPresentationController.swift; path = Classes/LNPresentationController.swift; sourceTree = "<group>"; };
 		79B2E9837A51E29FAAF2B56DA6BC8C5C /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDDispatchQueueLogFormatter.m; path = Classes/Extensions/DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
 		79BB4D8EEEDE8EED30406C0370230E25 /* DDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = Classes/DDLog.h; sourceTree = "<group>"; };
-		81AF4C8398FF91A26E413A2A81CDF3C8 /* LNAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LNAnimator.swift; path = Classes/LNAnimator.swift; sourceTree = "<group>"; };
-		8701A80BDF638A785E61EE0DE1EEC7EA /* LunarPresentationKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LunarPresentationKit-prefix.pch"; sourceTree = "<group>"; };
+		880C4476DEC1043BF0D1CCF748067F87 /* LNBottomSheetAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LNBottomSheetAnimator.swift; path = Classes/LNBottomSheetAnimator.swift; sourceTree = "<group>"; };
 		8B94252C021B6A4923FC8C941A8A6151 /* DDOSLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDOSLogger.h; path = Classes/DDOSLogger.h; sourceTree = "<group>"; };
 		8C3AA13B764D2C313AFD21D76B65A5A7 /* DDLoggerNames.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLoggerNames.m; path = Classes/DDLoggerNames.m; sourceTree = "<group>"; };
 		8D67D96B1560A6D0A230A1C7098EC86F /* CocoaLumberjack-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-umbrella.h"; sourceTree = "<group>"; };
 		8DE9386C9C67D456BBEFCDDAE54135F0 /* DDASLLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = Classes/DDASLLogger.h; sourceTree = "<group>"; };
 		8F274CA78D74D28C063DC7F17B3BD1A1 /* Pods-LNPresentationKitTestApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LNPresentationKitTestApp-Info.plist"; sourceTree = "<group>"; };
-		912A4ED542A0284E29B40228F50358CF /* LNBottomSheetAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LNBottomSheetAnimator.swift; path = Classes/LNBottomSheetAnimator.swift; sourceTree = "<group>"; };
 		92506D3F35BD417A147935DCB0BF13E7 /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = Classes/DDFileLogger.m; sourceTree = "<group>"; };
 		92987B1D790731E9B57CB07AD7B80C3A /* SwiftLogLevel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftLogLevel.h; path = Classes/SwiftLogLevel.h; sourceTree = "<group>"; };
 		93ED23EC2E873D800C7FA716A010A831 /* DDASLLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = Classes/DDASLLogger.m; sourceTree = "<group>"; };
 		959FB691AA6628D0A79CA03CA27EC2E4 /* DDFileLogger+Buffering.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDFileLogger+Buffering.h"; path = "Classes/Extensions/DDFileLogger+Buffering.h"; sourceTree = "<group>"; };
-		95BF5C11F19E277EB7E31A0DB42ACE7E /* LunarPresentationKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LunarPresentationKit-umbrella.h"; sourceTree = "<group>"; };
+		974883705102834A4AC4050726226E5D /* LNBottomSheetPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LNBottomSheetPresentationController.swift; path = Classes/LNBottomSheetPresentationController.swift; sourceTree = "<group>"; };
 		9A19C3D216E5046829AC1B43028DE2D0 /* CocoaLumberjack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaLumberjack-dummy.m"; sourceTree = "<group>"; };
 		9AD1EB4171A798C5AF338480472A7F25 /* DDLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = Classes/DDLog.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E6C70E4F102E597DFBB76790D739562 /* Pods-LNPresentationKitTestApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LNPresentationKitTestApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		A47D9117C1DD94B7A645AFE3E4B74A16 /* Pods-LunarPresentationKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LunarPresentationKit-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A4CA60634BACC7330F3CCB3A5D05259E /* CocoaLumberjack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CocoaLumberjack.h; path = Classes/CocoaLumberjack.h; sourceTree = "<group>"; };
+		A5416671DB6BC0CB03902AA4C947220D /* LunarPresentationKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LunarPresentationKit-umbrella.h"; sourceTree = "<group>"; };
 		A55E84D5EB3A9608379E4F00F98761F9 /* DDMultiFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDMultiFormatter.m; path = Classes/Extensions/DDMultiFormatter.m; sourceTree = "<group>"; };
-		A762550D80182C7D5E6018492983F686 /* LunarPresentationKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LunarPresentationKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A9B2D356647936D9D789A37E863D0FF6 /* Pods-LunarPresentationKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LunarPresentationKit-dummy.m"; sourceTree = "<group>"; };
 		ACBF0AE6649103C17CBB1EFCDDE8923D /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = Classes/DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
 		AFDA7E13DB6DBBD176ECD1A33F669412 /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDContextFilterLogFormatter.m; path = Classes/Extensions/DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
 		B07452F765B6CD733FC56F21B49E03D5 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDDispatchQueueLogFormatter.h; path = Classes/Extensions/DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
 		B1065B23B2143D5F7EF0C5B85970F964 /* CLIColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLIColor.h; path = Classes/CLI/CLIColor.h; sourceTree = "<group>"; };
 		B2C5F6047CB175EC4C9C99B20331BE19 /* CocoaLumberjack-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaLumberjack-Info.plist"; sourceTree = "<group>"; };
-		B847FD27952833EEF933A83BAA020F9B /* LunarPresentationKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LunarPresentationKit-Info.plist"; sourceTree = "<group>"; };
 		BC7188C780CBE037678683B9856995EA /* DDAssertMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAssertMacros.h; path = Classes/DDAssertMacros.h; sourceTree = "<group>"; };
 		BE895120379BE9D98EF5040839CE0FE7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BF469D6BE05E3826FCCE9C2F886B2949 /* LNAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LNAnimator.swift; path = Classes/LNAnimator.swift; sourceTree = "<group>"; };
+		BF55D259A4E4DC52380494BBB4030EC6 /* LunarPresentationKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LunarPresentationKit.modulemap; sourceTree = "<group>"; };
 		C261436D14052AE3C35F240BCD155CAC /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaLumberjack.framework; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C5A0C13E6D7657DF9637DE37632E63 /* CocoaLumberjack.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaLumberjack.xcconfig; sourceTree = "<group>"; };
 		C54B5F8C28372E0E9A45ADC1B62AA9E2 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6C450C4E3EB674C5372E44A5EBFF98 /* DDLogMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLogMacros.h; path = Classes/DDLogMacros.h; sourceTree = "<group>"; };
 		D24A2610D3EA82D7603EF56959448307 /* CocoaLumberjack-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-prefix.pch"; sourceTree = "<group>"; };
-		D9DFBA26E423641467DB97B07604F0C0 /* LunarPresentationKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LunarPresentationKit.modulemap; sourceTree = "<group>"; };
 		D9F22484AB4DF9567D7E708EE7ED63E4 /* DDAssert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DDAssert.swift; path = Classes/DDAssert.swift; sourceTree = "<group>"; };
 		DCAC12FED5F6B682B7270F525DA5539F /* LunarPresentationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LunarPresentationKit.framework; path = LunarPresentationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0A758FBE1B8BC5BAEE3071F57B3F415 /* DDLegacyMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLegacyMacros.h; path = Classes/DDLegacyMacros.h; sourceTree = "<group>"; };
-		E51D1B9EE7FC83C4D8759D5D5BDBF988 /* LunarPresentationKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LunarPresentationKit-dummy.m"; sourceTree = "<group>"; };
 		F405530B70D2B810D554D63CAEF4C417 /* DDMultiFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMultiFormatter.h; path = Classes/Extensions/DDMultiFormatter.h; sourceTree = "<group>"; };
 		F5EC82E240E7C4A5A6833B09061A4D4C /* DDFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = Classes/DDFileLogger.h; sourceTree = "<group>"; };
-		F63CF85F4AA82BEF9D30E9C69C3473C9 /* LNSideSheetAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LNSideSheetAnimator.swift; path = Classes/LNSideSheetAnimator.swift; sourceTree = "<group>"; };
+		F6FA144C75F005FA805D7FF60048626A /* LNSideSheetPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LNSideSheetPresentationController.swift; path = Classes/LNSideSheetPresentationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4E89FBFA6D6BAFBDA0C6315E3E7E8B25 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D75654FC1704158B9E1591A694DE0AF7 /* CocoaLumberjack.framework in Frameworks */,
-				7A62797A4A1BE469B5498402A9B29FA9 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		624EEA27A9AE8B45B4C0EFF1262D78DB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,6 +199,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6949BF2A8CF492225A02F703377EA0D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE6389BA3FEA880AE65CF2DA603AA8EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				477BC15A8DB4AB6D9FFC88DE5B2D0FD5 /* CocoaLumberjack.framework in Frameworks */,
+				FE076872B25301C6996F788AAD862093 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,26 +324,32 @@
 			name = Swift;
 			sourceTree = "<group>";
 		};
-		4C05393B3BACDAF619B9BD6CCF180DF9 /* LunarPresentationKit */ = {
+		45DFB87D763CDB3481EE5434154514B0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				81AF4C8398FF91A26E413A2A81CDF3C8 /* LNAnimator.swift */,
-				912A4ED542A0284E29B40228F50358CF /* LNBottomSheetAnimator.swift */,
-				32C91F54E33F48FAF8EFF1AE9A02D1B6 /* LNBottomSheetPresentationController.swift */,
-				12E5918829709695258AF27176D24141 /* LNPresentationController.swift */,
-				F63CF85F4AA82BEF9D30E9C69C3473C9 /* LNSideSheetAnimator.swift */,
-				3A2280AD7AC42FC6DA158401BB9A2FE7 /* LNTransitioningDelegate.swift */,
-				752D8FF1A7730E09834ECA9568FF1427 /* Pod */,
-				D628F54E4D1B803C74C72E8EA32B7E5A /* Support Files */,
+				BF55D259A4E4DC52380494BBB4030EC6 /* LunarPresentationKit.modulemap */,
+				094EEF6CCAF1C2785260F7CC89E42CF5 /* LunarPresentationKit.xcconfig */,
+				443569289BBE070BEB2401932E83E4D1 /* LunarPresentationKit-dummy.m */,
+				37406AB72EA2699567322EB805E28316 /* LunarPresentationKit-Info.plist */,
+				26A90227FE0FDB7A93B821E4983BB468 /* LunarPresentationKit-prefix.pch */,
+				A5416671DB6BC0CB03902AA4C947220D /* LunarPresentationKit-umbrella.h */,
 			);
-			name = LunarPresentationKit;
-			path = ../LunarPresentationKit;
+			name = "Support Files";
+			path = "../Pods/Target Support Files/LunarPresentationKit";
 			sourceTree = "<group>";
 		};
-		752D8FF1A7730E09834ECA9568FF1427 /* Pod */ = {
+		4C1C8142DE0DE10A6E110E89CFDF00FD /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A762550D80182C7D5E6018492983F686 /* LunarPresentationKit.podspec */,
+				B655D5C78E457CE91AE0C6670D4428D5 /* LunarPresentationKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		5AF7FAB871E80B12D1E721403B2E2672 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4C2635632AEAAB8DABE6B384BC83B115 /* LunarPresentationKit.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -380,38 +388,33 @@
 			path = "../Target Support Files/CocoaLumberjack";
 			sourceTree = "<group>";
 		};
+		B655D5C78E457CE91AE0C6670D4428D5 /* LunarPresentationKit */ = {
+			isa = PBXGroup;
+			children = (
+				BF469D6BE05E3826FCCE9C2F886B2949 /* LNAnimator.swift */,
+				880C4476DEC1043BF0D1CCF748067F87 /* LNBottomSheetAnimator.swift */,
+				974883705102834A4AC4050726226E5D /* LNBottomSheetPresentationController.swift */,
+				783A30951CABA61EAF62D8FBDF2897BD /* LNPresentationController.swift */,
+				0ED3F305D7E7D4F985DC205AC3DF4A0B /* LNSideSheetAnimator.swift */,
+				F6FA144C75F005FA805D7FF60048626A /* LNSideSheetPresentationController.swift */,
+				49C769C7FD417E75548A606E8AFF90FE /* LNTransitioningDelegate.swift */,
+				5AF7FAB871E80B12D1E721403B2E2672 /* Pod */,
+				45DFB87D763CDB3481EE5434154514B0 /* Support Files */,
+			);
+			name = LunarPresentationKit;
+			path = ../LunarPresentationKit;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D3102C01D81BB829C5B799FD22CAAD94 /* Development Pods */,
+				4C1C8142DE0DE10A6E110E89CFDF00FD /* Development Pods */,
 				80860982248BE58E37E168B6EFB6FA46 /* Frameworks */,
 				320ED2F2348655F220D240EB856D3CE1 /* Pods */,
 				01A2C4D640D93E94D872DEF8F6C0F59F /* Products */,
 				1AC7C089DC34D1377CDB00A385BFE747 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D3102C01D81BB829C5B799FD22CAAD94 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4C05393B3BACDAF619B9BD6CCF180DF9 /* LunarPresentationKit */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		D628F54E4D1B803C74C72E8EA32B7E5A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D9DFBA26E423641467DB97B07604F0C0 /* LunarPresentationKit.modulemap */,
-				3AD455F0278265FDDDB5739EC457838A /* LunarPresentationKit.xcconfig */,
-				E51D1B9EE7FC83C4D8759D5D5BDBF988 /* LunarPresentationKit-dummy.m */,
-				B847FD27952833EEF933A83BAA020F9B /* LunarPresentationKit-Info.plist */,
-				8701A80BDF638A785E61EE0DE1EEC7EA /* LunarPresentationKit-prefix.pch */,
-				95BF5C11F19E277EB7E31A0DB42ACE7E /* LunarPresentationKit-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Pods/Target Support Files/LunarPresentationKit";
 			sourceTree = "<group>";
 		};
 		EAD9B5341344531E0F2159E5D305FD24 /* iOS */ = {
@@ -461,19 +464,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		868247BA517147B66888A0A377FAF78E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E4AA4FBEF45B1FE41987859370FA7E52 /* LunarPresentationKit-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		ADE68BFBF856EA4D8920EF91C40025C7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E07DE92D78487DBEF91FE774B61A553C /* Pods-LunarPresentationKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA2A4E12892989F1618D14822E8BB4A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ED6788B2C9500F5E100613BB65075EA /* LunarPresentationKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,17 +505,17 @@
 		};
 		B9401E293770F4F229A93A896A7289A0 /* LunarPresentationKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6AF9D075E9FEF8A311BE4674B56D36A5 /* Build configuration list for PBXNativeTarget "LunarPresentationKit" */;
+			buildConfigurationList = 35AD47FF427175796C3F4030BE6E1EFD /* Build configuration list for PBXNativeTarget "LunarPresentationKit" */;
 			buildPhases = (
-				868247BA517147B66888A0A377FAF78E /* Headers */,
-				F81DAFE7B94C47258718FCB7716FB297 /* Sources */,
-				4E89FBFA6D6BAFBDA0C6315E3E7E8B25 /* Frameworks */,
-				756BE6F9D8664F6DA42F1FD8F179DF50 /* Resources */,
+				EA2A4E12892989F1618D14822E8BB4A6 /* Headers */,
+				A09932FBFC1668C1BAB922C98AD2CD48 /* Sources */,
+				CE6389BA3FEA880AE65CF2DA603AA8EF /* Frameworks */,
+				B525285263671952722102214D497C10 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				81F9229E6396361CF795214CCF7F4D39 /* PBXTargetDependency */,
+				25DF0D14F3C0625DF9D5E996FFF5C536 /* PBXTargetDependency */,
 			);
 			name = LunarPresentationKit;
 			productName = LunarPresentationKit;
@@ -593,14 +596,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		756BE6F9D8664F6DA42F1FD8F179DF50 /* Resources */ = {
+		8C7BECC4C67E2D2110F48B13A2BC8C94 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8C7BECC4C67E2D2110F48B13A2BC8C94 /* Resources */ = {
+		B525285263671952722102214D497C10 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -633,6 +636,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A09932FBFC1668C1BAB922C98AD2CD48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C415603389C105405CB4E0AC61207EE4 /* LNAnimator.swift in Sources */,
+				A0A1DFAFEC54B26E6EE5DF9C2B891322 /* LNBottomSheetAnimator.swift in Sources */,
+				94771B3E57B92CAEB181B877CDBECF62 /* LNBottomSheetPresentationController.swift in Sources */,
+				222AEA79C71E2EEBE40B0F07685287F4 /* LNPresentationController.swift in Sources */,
+				948F110DBCCE57BEB37BFDA0C6F69998 /* LNSideSheetAnimator.swift in Sources */,
+				467E88C030C0DF96CEE1B52160480823 /* LNSideSheetPresentationController.swift in Sources */,
+				AD65FDD8A428665A9FF25B9F2141D441 /* LNTransitioningDelegate.swift in Sources */,
+				A350DA7698EDFABC4A6B520921E97FE6 /* LunarPresentationKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E85D5753D1D064F72FDC5BD1306CFEC9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -656,34 +674,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F81DAFE7B94C47258718FCB7716FB297 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ABCD282CEDAE4B76EF5A617C69CD13BD /* LNAnimator.swift in Sources */,
-				810E59751E7D0F24B9067E63D83ACE4A /* LNBottomSheetAnimator.swift in Sources */,
-				D54564EA6F9CA98E5974837881E70273 /* LNBottomSheetPresentationController.swift in Sources */,
-				46C8327521AC30B201CEF04878AB4460 /* LNPresentationController.swift in Sources */,
-				AD01580AC1A58942950F357E9D1ED245 /* LNSideSheetAnimator.swift in Sources */,
-				2BEA0608FFA035FB8DD9D374AD08CD0E /* LNTransitioningDelegate.swift in Sources */,
-				52657CFAD0C87B36950C42DB2357ADE4 /* LunarPresentationKit-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		25DF0D14F3C0625DF9D5E996FFF5C536 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjack;
+			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
+			targetProxy = 49644B2EFAC763B90C99A96D0434B149 /* PBXContainerItemProxy */;
+		};
 		46AC395BC8C579930FF1059D476D3FA5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CocoaLumberjack;
 			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
 			targetProxy = 0ED96DB0167C7B24C7E36551680129BF /* PBXContainerItemProxy */;
-		};
-		81F9229E6396361CF795214CCF7F4D39 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CocoaLumberjack;
-			target = E95654B155D25890BE8E26081FCA8265 /* CocoaLumberjack */;
-			targetProxy = 4DB85AC2BEE367207BAF808E9FB23FAC /* PBXContainerItemProxy */;
 		};
 		87C3D48BD5087DC91EBCF853757E95EA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -795,38 +799,6 @@
 			};
 			name = Debug;
 		};
-		4951C09EAF97FC9A0DB85E94BE1D0D38 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AD455F0278265FDDDB5739EC457838A /* LunarPresentationKit.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LunarPresentationKit/LunarPresentationKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LunarPresentationKit/LunarPresentationKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LunarPresentationKit/LunarPresentationKit.modulemap";
-				PRODUCT_MODULE_NAME = LunarPresentationKit;
-				PRODUCT_NAME = LunarPresentationKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		4D7E4DE20781C2CFE69147F624ED78A6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1C101A7E7341DD2525712C67BAAF7AF9 /* Pods-LNPresentationKitTestApp.release.xcconfig */;
@@ -896,6 +868,38 @@
 			};
 			name = Debug;
 		};
+		86391DB509F5DF8AD8F707F8AE6AC56B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 094EEF6CCAF1C2785260F7CC89E42CF5 /* LunarPresentationKit.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LunarPresentationKit/LunarPresentationKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LunarPresentationKit/LunarPresentationKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LunarPresentationKit/LunarPresentationKit.modulemap";
+				PRODUCT_MODULE_NAME = LunarPresentationKit;
+				PRODUCT_NAME = LunarPresentationKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		B102853BB3392A16E68667C38114BC6A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -953,39 +957,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		B4405D278F0D7BA9880E2C6FFE2AE3AD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AD455F0278265FDDDB5739EC457838A /* LunarPresentationKit.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LunarPresentationKit/LunarPresentationKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LunarPresentationKit/LunarPresentationKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LunarPresentationKit/LunarPresentationKit.modulemap";
-				PRODUCT_MODULE_NAME = LunarPresentationKit;
-				PRODUCT_NAME = LunarPresentationKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1090,6 +1061,39 @@
 			};
 			name = Release;
 		};
+		F9FF78FD284AA51FA94C543E44D1AEEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 094EEF6CCAF1C2785260F7CC89E42CF5 /* LunarPresentationKit.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LunarPresentationKit/LunarPresentationKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LunarPresentationKit/LunarPresentationKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LunarPresentationKit/LunarPresentationKit.modulemap";
+				PRODUCT_MODULE_NAME = LunarPresentationKit;
+				PRODUCT_NAME = LunarPresentationKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1102,20 +1106,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		35AD47FF427175796C3F4030BE6E1EFD /* Build configuration list for PBXNativeTarget "LunarPresentationKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86391DB509F5DF8AD8F707F8AE6AC56B /* Debug */,
+				F9FF78FD284AA51FA94C543E44D1AEEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F5CE9157A6944C572608740FA41A6A5 /* Debug */,
 				B102853BB3392A16E68667C38114BC6A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6AF9D075E9FEF8A311BE4674B56D36A5 /* Build configuration list for PBXNativeTarget "LunarPresentationKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4951C09EAF97FC9A0DB85E94BE1D0D38 /* Debug */,
-				B4405D278F0D7BA9880E2C6FFE2AE3AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -27,7 +27,7 @@ public class LNBottomSheetPresentationController: LNPresentationController {
         })
     }
     
-    override func initializeDismissalPanGesture() {
+    override public func initializeDismissalPanGesture() {
         let dismissalPanGesture = UIPanGestureRecognizer(target: self, action: #selector(dismissalPanGestureRecognizer(gesture:)))
         presentedViewController.view.addGestureRecognizer(dismissalPanGesture)
         self.dismissalPanGesture = dismissalPanGesture

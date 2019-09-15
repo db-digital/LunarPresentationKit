@@ -17,11 +17,13 @@ public class LNTransitioningDelegate: NSObject, UIViewControllerTransitioningDel
     public var needsInteractiveDismissal = true
     
     public func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        presentationAnimator = presentationController?.animator
         DDLogDebug("animation controller for presentation vended \(String(describing: presentationAnimator))")
         return presentationAnimator
     }
     
     public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        dismissalAnimator = presentationController?.animator
         DDLogDebug("animation controller for dismissal vended \(String(describing: dismissalAnimator))")
         return dismissalAnimator
     }

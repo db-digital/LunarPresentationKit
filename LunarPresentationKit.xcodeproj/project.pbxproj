@@ -21,6 +21,7 @@
 		4A4765BD2323892500181E51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A4765BB2323892500181E51 /* LaunchScreen.storyboard */; };
 		4A4765C323238C6C00181E51 /* LNRightPresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4765C223238C6C00181E51 /* LNRightPresentedViewController.swift */; };
 		4A4765C723239CCE00181E51 /* LNSideSheetAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4765C623239CCE00181E51 /* LNSideSheetAnimator.swift */; };
+		4A5CADE6232D0D7800B471C2 /* LNSideSheetPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5CADE5232D0D7800B471C2 /* LNSideSheetPresentationController.swift */; };
 		5D6B030604BEBE3B22E4EA0B /* Pods_LNPresentationKitTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9576C41E881BC1849FE6B215 /* Pods_LNPresentationKitTestApp.framework */; };
 		9A351460B60E81342934809C /* Pods_LunarPresentationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708A1922CD6482BF451B2F46 /* Pods_LunarPresentationKit.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		4A4765BE2323892500181E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A4765C223238C6C00181E51 /* LNRightPresentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNRightPresentedViewController.swift; sourceTree = "<group>"; };
 		4A4765C623239CCE00181E51 /* LNSideSheetAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LNSideSheetAnimator.swift; sourceTree = "<group>"; };
+		4A5CADE5232D0D7800B471C2 /* LNSideSheetPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNSideSheetPresentationController.swift; sourceTree = "<group>"; };
 		708A1922CD6482BF451B2F46 /* Pods_LunarPresentationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunarPresentationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7364BABD159C89925F878DE4 /* Pods-LunarPresentationKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunarPresentationKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LunarPresentationKit/Pods-LunarPresentationKit.debug.xcconfig"; sourceTree = "<group>"; };
 		92E45D1E8D6BCFA108DE11BB /* Pods-LNPresentationKitTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LNPresentationKitTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LNPresentationKitTestApp/Pods-LNPresentationKitTestApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				4A07EF65232CCCA900D36425 /* LNAnimator.swift */,
 				4A4765662323879200181E51 /* LNTransitioningDelegate.swift */,
 				4A476568232387D900181E51 /* LNPresentationController.swift */,
+				4A5CADE5232D0D7800B471C2 /* LNSideSheetPresentationController.swift */,
 				4A07EF61232B8F7100D36425 /* LNBottomSheetPresentationController.swift */,
 			);
 			path = Classes;
@@ -343,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A5CADE6232D0D7800B471C2 /* LNSideSheetPresentationController.swift in Sources */,
 				4A07EF62232B8F7100D36425 /* LNBottomSheetPresentationController.swift in Sources */,
 				4A4765672323879200181E51 /* LNTransitioningDelegate.swift in Sources */,
 				4A07EF64232C9C3B00D36425 /* LNBottomSheetAnimator.swift in Sources */,

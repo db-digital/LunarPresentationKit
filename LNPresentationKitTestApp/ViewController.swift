@@ -28,7 +28,7 @@ class LNPresentingVC: UIViewController {
         view.backgroundColor = .red
         
         rightPresentedVC.transitioningDelegate = rightVCTransitioningDelegate
-        sideSheetPresentationController = LNPresentationController(presentedViewController: rightPresentedVC, presenting: self)
+        sideSheetPresentationController = LNSideSheetPresentationController(presentedViewController: rightPresentedVC, presenting: self)
         sideSheetPresentationController?.presentationViewPanGesture = panGesture
         rightVCTransitioningDelegate.presentationController = sideSheetPresentationController
         rightPresentedVC.modalPresentationStyle = .custom
