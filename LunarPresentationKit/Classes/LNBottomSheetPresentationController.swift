@@ -12,9 +12,12 @@ import CocoaLumberjack
 public class LNBottomSheetPresentationController: LNPresentationController {
     let heightFactor : CGFloat = 0.5
     let dimmingView = UIView(frame: .zero)
-    var dismissalPanGesture : UIPanGestureRecognizer?
-    let dismissalAnimator = LNBottomSheetAnimator()
 
+    public override init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?) {
+        super.init(presentedViewController: presentedViewController, presenting: presentingViewController)
+        animator = LNBottomSheetAnimator()
+    }
+    
     public override func presentationTransitionWillBegin() {
         initializeTapGesture()
         initializeDimmingView()
@@ -25,12 +28,14 @@ public class LNBottomSheetPresentationController: LNPresentationController {
         }, completion: { (context) in
             
         })
+        super.presentationTransitionWillBegin()
     }
     
     override public func initializeDismissalPanGesture() {
         let dismissalPanGesture = UIPanGestureRecognizer(target: self, action: #selector(dismissalPanGestureRecognizer(gesture:)))
         presentedViewController.view.addGestureRecognizer(dismissalPanGesture)
-        self.dismissalPanGesture = dismissalPanGesture
+        dismissalViewPanGesture = dismissalPanGesture
+        super.initializeDismissalPanGesture()
     }
     
     @objc func dismissalPanGestureRecognizer(gesture : UIPanGestureRecognizer) {
@@ -40,10 +45,7 @@ public class LNBottomSheetPresentationController: LNPresentationController {
         
         if (gesture.state == .began) {
             DDLogDebug("dismissal pan gesture state began")
-            let transitioningDelegate = presentedViewController.transitioningDelegate as? LNTransitioningDelegate
-            transitioningDelegate?.dismissalAnimator = dismissalAnimator
-            dismissalAnimator.isBeingPresented = false
-            transitioningDelegate?.needsInteractiveDismissal = true
+            (presentedViewController.transitioningDelegate as? LNTransitioningDelegate)?.needsInteractiveDismissal = true
             presentedViewController.dismiss(animated: true, completion: nil)
         } else if (gesture.state == .changed) {
             dismissalInteractor?.update(percentage)
@@ -66,8 +68,8 @@ public class LNBottomSheetPresentationController: LNPresentationController {
             self.dimmingView.alpha = 0
             self.presentedViewController.view.layer.cornerRadius = 0
             }, completion: { (context) in
-                
         })
+        super.dismissalTransitionWillBegin()
     }
     
     func initializeTapGesture() {
@@ -88,8 +90,7 @@ public class LNBottomSheetPresentationController: LNPresentationController {
         DDLogDebug("dimming view tap gesture listener")
         let transitioningDelegate = presentedViewController.transitioningDelegate as? LNTransitioningDelegate
         transitioningDelegate?.needsInteractiveDismissal = false
-        dismissalAnimator.isBeingPresented = false
-        transitioningDelegate?.dismissalAnimator = dismissalAnimator
+        animator?.isBeingPresented = false
         presentedViewController.dismiss(animated: true, completion: nil)
     }
     
