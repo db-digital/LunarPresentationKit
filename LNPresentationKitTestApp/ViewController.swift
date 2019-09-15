@@ -11,29 +11,32 @@ import LunarPresentationKit
 import CocoaLumberjack
 
 class LNPresentingVC: UIViewController {
-    let rightVCTransitioningDelegate = LNTransitioningDelegate()
+    let customTransitioningDelegate = LNTransitioningDelegate()
     var bottomSheetPresentationController : LNBottomSheetPresentationController?
-    var sideSheetPresentationController : LNPresentationController?
-    let bottomSheetTransitioningDelegate = LNTransitioningDelegate()
     let rightPresentedVC = LNRightPresentedViewController()
-    let panGesture = UIScreenEdgePanGestureRecognizer()
+    let sideSheetPresentationPanGesture = UIScreenEdgePanGestureRecognizer()
+    var sideSheetPresentationController : LNPresentationController?
     let bottomSheeetButton = UIButton(type: .system)
-    let bottomSheetPresentationAnimator = LNBottomSheetAnimator()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         DDLogDebug("app main view controller loaded")
-        addPanGesture()
         view.backgroundColor = .red
         
-        rightPresentedVC.transitioningDelegate = rightVCTransitioningDelegate
-        sideSheetPresentationController = LNSideSheetPresentationController(presentedViewController: rightPresentedVC, presenting: self)
-        sideSheetPresentationController?.presentationViewPanGesture = panGesture
-        rightVCTransitioningDelegate.presentationController = sideSheetPresentationController
-        rightPresentedVC.modalPresentationStyle = .custom
+        setupSideSheetPresentation()
         initializeBottomSheetButton()
     }
+    
+    func setupSideSheetPresentation() {
+        addPanGesture()
+        rightPresentedVC.transitioningDelegate = customTransitioningDelegate
+        sideSheetPresentationController = LNSideSheetPresentationController(presentedViewController: rightPresentedVC, presenting: self)
+        sideSheetPresentationController?.presentationViewPanGesture = sideSheetPresentationPanGesture
+        customTransitioningDelegate.presentationController = sideSheetPresentationController
+        rightPresentedVC.modalPresentationStyle = .custom
+    }
+    
     
     func initializeBottomSheetButton() {
         view.addSubview(bottomSheeetButton)
@@ -55,15 +58,15 @@ class LNPresentingVC: UIViewController {
         DDLogVerbose("Bottom sheet action button pressed")
         let bottomSheetVC = LNBottomSheetViewController()
         bottomSheetVC.modalPresentationStyle = .custom
-        bottomSheetVC.transitioningDelegate = bottomSheetTransitioningDelegate
-        setupTransitioningDelegateForBotttomSheetPresentation(presentedVC :bottomSheetVC, delegate: bottomSheetTransitioningDelegate)
+        bottomSheetVC.transitioningDelegate = customTransitioningDelegate
+        setupTransitioningDelegateForBotttomSheetPresentation(presentedVC :bottomSheetVC, delegate: customTransitioningDelegate)
         present(bottomSheetVC, animated: true, completion: nil)
     }
     
     func addPanGesture() {
-        panGesture.edges = .right
-        panGesture.addTarget(self, action:#selector(self.handlePan(gesture:)))
-        view.addGestureRecognizer(panGesture)
+        sideSheetPresentationPanGesture.edges = .right
+        sideSheetPresentationPanGesture.addTarget(self, action:#selector(self.handlePan(gesture:)))
+        view.addGestureRecognizer(sideSheetPresentationPanGesture)
     }
     
     @objc func handlePan(gesture : UIScreenEdgePanGestureRecognizer) {
@@ -78,7 +81,6 @@ class LNPresentingVC: UIViewController {
     
     func setupTransitioningDelegateForBotttomSheetPresentation(presentedVC : UIViewController, delegate : LNTransitioningDelegate) {
         bottomSheetPresentationController = LNBottomSheetPresentationController(presentedViewController: presentedVC, presenting: self)
-        delegate.presentationAnimator = bottomSheetPresentationAnimator
         delegate.presentationController = bottomSheetPresentationController
         delegate.needsInteractivePresentation = false
     }
