@@ -11,22 +11,17 @@ import CocoaLumberjack
 
 public class LNBottomSheetPresentationController: LNPresentationController {
     let heightFactor : CGFloat = 0.5
-    let dimmingView = UIView(frame: .zero)
 
     public override init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?) {
         super.init(presentedViewController: presentedViewController, presenting: presentingViewController)
         animator = LNBottomSheetAnimator()
+        needsDimmingView = true
     }
     
     public override func presentationTransitionWillBegin() {
-        initializeTapGesture()
-        initializeDimmingView()
-        initializeDismissalPanGesture()
         presentedViewController.transitionCoordinator?.animate(alongsideTransition: { [unowned self] (context) in
-            self.dimmingView.alpha = 0.5
             self.presentedViewController.view.layer.cornerRadius = 15
-        }, completion: { (context) in
-            
+            }, completion: { (context) in
         })
         super.presentationTransitionWillBegin()
     }
@@ -64,33 +59,10 @@ public class LNBottomSheetPresentationController: LNPresentationController {
     
     public override func dismissalTransitionWillBegin() {
         presentedViewController.transitionCoordinator?.animate(alongsideTransition: { [unowned self] (context) in
-            self.dimmingView.alpha = 0
             self.presentedViewController.view.layer.cornerRadius = 0
-            }, completion: { (context) in
+            }, completion: { (complete) in   
         })
         super.dismissalTransitionWillBegin()
-    }
-    
-    func initializeTapGesture() {
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tapGestureListener(gesture:)))
-        dimmingView.addGestureRecognizer(tapGesture)
-    }
-    
-    func initializeDimmingView() {
-        if let containerView = containerView {
-            dimmingView.frame = containerView.frame
-            dimmingView.backgroundColor = UIColor.black
-            dimmingView.alpha = 0
-            containerView.addSubview(dimmingView)
-        }
-    }
-    
-    @objc func tapGestureListener(gesture : UITapGestureRecognizer) {
-        DDLogDebug("dimming view tap gesture listener")
-        let transitioningDelegate = presentedViewController.transitioningDelegate as? LNTransitioningDelegate
-        transitioningDelegate?.needsInteractiveDismissal = false
-        animator?.isBeingPresented = false
-        presentedViewController.dismiss(animated: true, completion: nil)
     }
     
     override public var frameOfPresentedViewInContainerView: CGRect {

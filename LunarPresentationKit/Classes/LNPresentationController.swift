@@ -15,6 +15,8 @@ public class LNPresentationController: UIPresentationController {
     weak public var presentationInteractor : UIPercentDrivenInteractiveTransition?
     weak public var dismissalInteractor : UIPercentDrivenInteractiveTransition?
     public var animator : LNAnimator?
+    public var needsDimmingView = false
+    var dimmingView : UIView?
     
     public override init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?) {
         super.init(presentedViewController: presentedViewController, presenting: presentingViewController)
@@ -23,11 +25,27 @@ public class LNPresentationController: UIPresentationController {
     
     public override func presentationTransitionWillBegin() {
         initializePresentationPanGesture()
+        if (needsDimmingView) {
+            initializeDimmingView()
+            guard let dimmingView = dimmingView else {
+                return
+            }
+            presentedViewController.transitionCoordinator?.animate(alongsideTransition: { (context) in
+                dimmingView.alpha = 0.5
+                }, completion: { (context) in
+            })
+        }
     }
     
     public override func dismissalTransitionWillBegin() {
         DDLogDebug("turning animator mode to dismissal")
         animator?.isBeingPresented = false
+        if needsDimmingView, let dimmingView = dimmingView {
+            presentedViewController.transitionCoordinator?.animate(alongsideTransition: { (context) in
+                dimmingView.alpha = 0
+                }, completion: { (context) in
+            })
+        }   
     }
     
     public func initializePresentationPanGesture() {
@@ -53,5 +71,27 @@ public class LNPresentationController: UIPresentationController {
     
     @objc public func presentationGestureListener(gesture : UIGestureRecognizer) {
         
+    }
+    
+    func initializeDimmingView() {
+        if let containerView = containerView {
+            let dimmingView = UIView(frame: .zero)
+            dimmingView.frame = containerView.frame
+            dimmingView.backgroundColor = UIColor.black
+            dimmingView.alpha = 0
+            containerView.addSubview(dimmingView)
+            self.dimmingView = dimmingView
+            
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dimmingViewTapGestureListener(gesture:)))
+            dimmingView.addGestureRecognizer(tapGesture)
+        }
+    }
+    
+    @objc func dimmingViewTapGestureListener(gesture : UITapGestureRecognizer) {
+        DDLogDebug("dimming view tap gesture listener")
+        let transitioningDelegate = presentedViewController.transitioningDelegate as? LNTransitioningDelegate
+        transitioningDelegate?.needsInteractiveDismissal = false
+        animator?.isBeingPresented = false
+        presentedViewController.dismiss(animated: true, completion: nil)
     }
 }
