@@ -23,24 +23,21 @@ public class LNSideSheetPresentationController: LNPresentationController {
         super.initializeDismissalPanGesture()
     }
     
-    @objc public override func dismissalPanGestureListener(panGesture : UIScreenEdgePanGestureRecognizer) {
+    @objc public override func dismissalGestureListener(gesture : UIGestureRecognizer) {
         DDLogVerbose("presentation controller : dismissal pan gesture listener")
         guard let containerView = containerView, let window = containerView.window else {
             DDLogWarn("dismissal container view or window not present")
             return
         }
-        let locationInContainer = panGesture.location(in: containerView).x
+        let locationInContainer = gesture.location(in: containerView).x
         let percentage = locationInContainer/window.bounds.size.width
         
         DDLogVerbose("location in container \(locationInContainer) percentage is \(percentage)")
-        DDLogVerbose("dismissal pan gesture state is \(panGesture.state.rawValue)")
-        if (panGesture.state == .began) {
-            presentedViewController.dismiss(animated: true, completion: nil)
-        }
-        if (panGesture.state == .changed) {
+        DDLogVerbose("dismissal pan gesture state is \(gesture.state.rawValue)")
+        if (gesture.state == .changed) {
             DDLogDebug("Dismissal percentage is \(percentage)")
             dismissalInteractor?.update(percentage)
-        } else if (panGesture.state == .ended) {
+        } else if (gesture.state == .ended) {
             if (percentage >= 0.3) {
                 DDLogDebug("pan gesture finishing dismissal at percentage \(percentage)")
                 dismissalInteractor?.finish()
@@ -49,14 +46,14 @@ public class LNSideSheetPresentationController: LNPresentationController {
                 dismissalInteractor?.cancel()
             }
         } else {
-            DDLogDebug("dismissal pan gesture came in the else with state \(panGesture.state.rawValue)")
+            DDLogDebug("dismissal pan gesture came in the else with state \(gesture.state.rawValue)")
         }
     }
-    @objc public override func presentationPanGestureListener(panGesture : UIScreenEdgePanGestureRecognizer) {
-        guard let containerView = containerView, let window = containerView.window else {
+    @objc public override func presentationGestureListener(gesture : UIGestureRecognizer) {
+        guard let panGesture = gesture as? UIScreenEdgePanGestureRecognizer, let containerView = containerView, let window = containerView.window else {
             return
         }
-        let location = panGesture.location(in: nil).x
+        let location = gesture.location(in: nil).x
         var percentage = location/window.bounds.size.width
         if (panGesture.edges == .right) {
             percentage = 1.0 - percentage

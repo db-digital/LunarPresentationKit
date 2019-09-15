@@ -31,19 +31,27 @@ public class LNPresentationController: UIPresentationController {
     }
     
     public func initializePresentationPanGesture() {
-        presentationViewPanGesture?.addTarget(self, action: #selector(self.presentationPanGestureListener(panGesture:)))
+        presentationViewPanGesture?.addTarget(self, action: #selector(self.presentationGestureListener(gesture:)))
     }
     
     public func initializeDismissalPanGesture() {
-        dismissalViewPanGesture?.addTarget(self, action: #selector(self.dismissalPanGestureListener(panGesture:)))
+        dismissalViewPanGesture?.addTarget(self, action: #selector(self._dismissalGestureListener(gesture:)))
+        dismissalViewPanGesture?.addTarget(self, action: #selector(self.dismissalGestureListener(gesture:)))
         DDLogDebug("presentation controller add target for updating progress for dismissal for pan gesture : \(String(describing: dismissalViewPanGesture))")
     }
     
-    @objc public func dismissalPanGestureListener(panGesture : UIScreenEdgePanGestureRecognizer) {
+    @objc func _dismissalGestureListener(gesture : UIGestureRecognizer) {
         DDLogDebug("dismisal pan gesture listener in LNPresentationController")
+        if (gesture.state == .began) {
+            presentedViewController.dismiss(animated: true, completion: nil)
+        }
     }
     
-    @objc public func presentationPanGestureListener(panGesture : UIScreenEdgePanGestureRecognizer) {
+    @objc public func dismissalGestureListener(gesture : UIGestureRecognizer) {
+        
+    }
+    
+    @objc public func presentationGestureListener(gesture : UIGestureRecognizer) {
         
     }
 }

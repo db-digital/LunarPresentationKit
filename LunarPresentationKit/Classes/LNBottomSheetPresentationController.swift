@@ -46,7 +46,6 @@ public class LNBottomSheetPresentationController: LNPresentationController {
         if (gesture.state == .began) {
             DDLogDebug("dismissal pan gesture state began")
             (presentedViewController.transitioningDelegate as? LNTransitioningDelegate)?.needsInteractiveDismissal = true
-            presentedViewController.dismiss(animated: true, completion: nil)
         } else if (gesture.state == .changed) {
             dismissalInteractor?.update(percentage)
             DDLogDebug("dismissal pan gesture state changing")
