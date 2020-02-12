@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "LunarPresentationKit"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A swift library for most used presentation styles in iOS"
 
   # This description is used to generate tags and improve search results.
@@ -81,8 +81,8 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  # spec.source       = { :git => "http://EXAMPLE/LunarPresentationKit.git", :tag => "#{spec.version}" }
-  spec.source       = { :path => "./" }
+   spec.source       = { :git => "https://github.com/rajatagrawal/LunarPresentationKit.git", :tag => "#{spec.version}" }
+  #spec.source       = { :path => "./" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
