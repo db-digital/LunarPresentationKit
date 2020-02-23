@@ -10,7 +10,7 @@ import UIKit
 import CocoaLumberjack
 
 public class LNBottomSheetPresentationController: LNPresentationController {
-    let heightFactor : CGFloat = 0.5
+    let heightFactor : CGFloat = 0.7
 
     public override init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?) {
         super.init(presentedViewController: presentedViewController, presenting: presentingViewController)
